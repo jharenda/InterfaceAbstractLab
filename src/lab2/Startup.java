@@ -5,7 +5,7 @@ package lab2;
  * @author Jennifer
  */
 public class Startup {
-// this startup does not run?!?! 
+ 
 
     public static void main(String[] args) {
 //         can't access subclass methods this way? 

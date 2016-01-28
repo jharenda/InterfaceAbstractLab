@@ -4,9 +4,9 @@ import javax.swing.JOptionPane;
 
 /**
  * The Advanced Java Course class is responsible for storing the Course Name,
- * Course Number, Credits and Prerequisites for itself. It must implement all the
- * methods as defined in the Programming Course Interface. Prerequisites is not included 
- * in the interface. 
+ * Course Number, Credits and Prerequisites for itself. It must implement all
+ * the methods as defined in the Programming Course Interface. Prerequisites is
+ * not included in the interface.
  *
  * @author Jennifer
  * @version 1.00
@@ -23,10 +23,6 @@ public class AdvancedJavaCourse implements ProgrammingCourse {
         this.setCourseNumber(courseNumber);
     }
 
-    public String getCourseNumber() {
-        return courseNumber;
-    }
-
     public final void setCourseNumber(String courseNumber) {
         if (courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
@@ -36,8 +32,8 @@ public class AdvancedJavaCourse implements ProgrammingCourse {
         this.courseNumber = courseNumber;
     }
 
-    public double getCredits() {
-        return credits;
+    public String getCourseNumber() {
+        return courseNumber;
     }
 
     public void setCredits(double credits) {
@@ -47,6 +43,10 @@ public class AdvancedJavaCourse implements ProgrammingCourse {
             System.exit(0);
         }
         this.credits = credits;
+    }
+
+    public double getCredits() {
+        return credits;
     }
 
     public String getPrerequisites() {
@@ -66,6 +66,7 @@ public class AdvancedJavaCourse implements ProgrammingCourse {
         return courseName;
     }
 // should methods be declared final in subclasses? 
+
     public final void setCourseName(String courseName) {
         if (courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,

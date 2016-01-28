@@ -22,10 +22,6 @@ public class IntroToProgrammingCourse implements ProgrammingCourse {
         this.setCourseNumber(courseNumber);
     }
 
-    public String getCourseNumber() {
-        return courseNumber;
-    }
-
     public final void setCourseNumber(String courseNumber) {
         if (courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
@@ -35,8 +31,8 @@ public class IntroToProgrammingCourse implements ProgrammingCourse {
         this.courseNumber = courseNumber;
     }
 
-    public double getCredits() {
-        return credits;
+    public String getCourseNumber() {
+        return courseNumber;
     }
 
     public void setCredits(double credits) {
@@ -48,10 +44,6 @@ public class IntroToProgrammingCourse implements ProgrammingCourse {
         this.credits = credits;
     }
 
-    public String getCourseName() {
-        return courseName;
-    }
-
     public final void setCourseName(String courseName) {
         if (courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
@@ -59,6 +51,14 @@ public class IntroToProgrammingCourse implements ProgrammingCourse {
             System.exit(0);
         }
         this.courseName = courseName;
+    }
+
+    public double getCredits() {
+        return credits;
+    }
+
+    public String getCourseName() {
+        return courseName;
     }
 
 }

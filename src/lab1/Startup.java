@@ -8,6 +8,7 @@ package lab1;
 //that we don't know about (for example, the final pre-req and credit methods), which means. 1. They could not be utilized because we (the subclass author)
 //don't know about them, which makes for a poorly designed program. 2. Or the sub class authors have to have the documentation of and the time to
 //research the superclass methods.  
+
 //Further, unless the concrete superclass methods are marked final, the sub-class authors could easily override the methods in an inappropriate way. 
 // It seems that overall, abstract super classes (vs interfaces) require a lot more careful and even more deliberate consideration and organization.
 // One good thing about astract superclasses is that it is possbile to enforce both the behavoir and the implemenation of the methods in subclasses. 

@@ -1,9 +1,9 @@
 package lab1;
 
 import javax.swing.JOptionPane;
-
 /**
- * This is the abstract class used
+ * This is the abstract class used to outline what methods all subclasses should have. Does 
+ * not have pre-requisites because it should not be provided to all classes. 
  *
  * @author Jennifer
  */
